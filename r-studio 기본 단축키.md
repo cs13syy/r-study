@@ -4,7 +4,7 @@
 - 처음부터 커서있는 곳까지 실행 : ctrl + alt + b
 - source 창 이동 : ctrl + 1
 - console 창 이동 : ctrl + 2
-- ctrl + alt + 화살표 (여러개의 텍스트 파일 편집 시)
+- source 파일 여러개 이동 시 : ctrl + alt + 왼/오 화살표
 - 주석 처리 및 해제 : ctrl + shift + c
 - 함수 및 R 소스파일 내용 보기 : F2
 ## console 창에서의 단축키
