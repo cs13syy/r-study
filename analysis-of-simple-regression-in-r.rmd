@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### 1. Analysis of lm() Results
 
-```{r}
+```{r, echo=TRUE}
 dat <- read.csv("mtmv_data_10_12.csv", header=TRUE) 
 fit <- lm(vote_share ~ mshare, data=dat)
 fit
