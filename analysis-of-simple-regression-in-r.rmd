@@ -2,7 +2,7 @@
 title: "Analysis of Simple Linear Regression"
 author: "Seoyun Yang"
 date: "2018년 8월 7일"
-output: html_document
+output: rmarkdown::github_document
 mainfont: NanumGothic
 ---
 
