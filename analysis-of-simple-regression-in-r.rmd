@@ -16,8 +16,6 @@ dat <- read.csv("mtmv_data_10_12.csv", header=TRUE)
 fit <- lm(vote_share ~ mshare, data=dat)
 fit
 ```
-![](lm.png)
-
 * keywords
     * lm(formula = vote_share ~ mshare, data = dat) : 회귀식
     * formula = vote_share ~ mshare : 포뮬라. y ~ x 형태. mshare로부터 vote_share를 예측.
@@ -30,8 +28,6 @@ fit
 ```{r}
 summary(fit)
 ```
-![](sum.png)
-
 * keywords 1
     * Residuals : 잔차, 회귀식에 의해 추정된 값과 실제값 간의 차이
         * 차례로 잔차의 최소값, 1사분위수, 중앙값, 3사분위수, 최댓값
