@@ -21,7 +21,7 @@ tlmgr install ktugbin<br/>
 tlmgr install texworks-config<br/> 
 tlmgr install nanumttf hcr-lvt<br/>
 - (3) "TeXworks editor"를 실행하고, 실행 창 초록 버튼 옆 항목을 "XeLaTex"로 선택한다
-- (4) 입력창에 다음과 같이 입력하고, 초록 버튼을 클릭한다
+- (4) 입력창에 다음과 같이 입력하고, 초록 버튼을 클릭한다<br/>
 \documentclass{article}<br/>
 \usepackage{kotex}<br/>
 \begin{document}<br/>
