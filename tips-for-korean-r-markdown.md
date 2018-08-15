@@ -2,7 +2,7 @@
 기존의 R 마크다운 파일에서 한글을 입력하고 word나 pdf로 knit하면 파일이 만들어지지 않거나 깨져서 출력된다. R 마크다운으로 한글 파일을 만들기 위해서는 몇 가지 설치가 필요하다. 아래 순서를 따라해보고 안 되는 경우 구글링을 통해 오류를 해결해나가면서 설치해보자.
 ***
 ## 1. TeX Live 설치
-- (1) 다음의 링크를 클릭하여 TexLive 설치 페이지로 이동하자 [TeX Live](https://tug.org/texlive/acquire-netinstall.html)
+- (1) 다음의 링크를 클릭하여 Tex Live 설치 페이지로 이동하자 [TeX Live](https://tug.org/texlive/acquire-netinstall.html)
 - (2) 해당 페이지 넷째 줄에 "install-tl.zip"를 클릭하여 파일을 다운 받는다
 - (3) 다운 받은 압축 파일을 풀어준다
 - (4) "install-tl-advanced" 파일에 커서를 대고 오른쪽 버튼을 클릭하여 "관리자 권한으로 실행"으로 파일을 열어준다 
