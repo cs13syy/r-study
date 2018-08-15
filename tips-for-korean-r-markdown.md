@@ -30,7 +30,7 @@ Hello World 안녕하세요<br/>
 ※ 오타가 있을 시 "Undefined control sequence"라고 오류 메시지가 뜨니 정확히 입력하자<br/>
 - (5) 이상이 없으면 pdf 파일로 변환되어 한글이 출력되는 것을 확인할 수 있다
 ***
-## 3. r markdown 실행
+## 3. R Markdown 실행
 - (1) r studio를 실행한다
 - (2) 상단의 File -> New File -> R Markdown을 클릭한다
 - (3) Title과 Author를 입력하고 OK 버튼을 클릭한다
