@@ -22,12 +22,12 @@ tlmgr install texworks-config<br/>
 tlmgr install nanumttf hcr-lvt<br/>
 - (3) "TeXworks editor"를 실행하고, 실행 창 초록 버튼 옆 항목을 "XeLaTex"로 선택한다
 - (4) 입력창에 다음과 같이 입력하고, 초록 버튼을 클릭한다
-* 오타가 있을 시 "Undefined control sequence"라고 오류 메시지가 뜨니 정확히 입력하자<br/>
 \documentclass{article}<br/>
 \usepackage{kotex}<br/>
 \begin{document}<br/>
 Hello World 안녕하세요<br/>
 \end{document}<br/>
+※ 오타가 있을 시 "Undefined control sequence"라고 오류 메시지가 뜨니 정확히 입력하자<br/>
 - (5) 이상이 없으면 pdf 파일로 변환되어 한글이 출력되는 것을 확인할 수 있다
 ***
 ## 3. r markdown 실행
