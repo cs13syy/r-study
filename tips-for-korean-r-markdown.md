@@ -14,33 +14,33 @@
 ***
 ## 2. TeX Live 한글 적용
 - (1) "TeX Live command-line"을 실행한다
-- (2) 다음의 문구를 순서대로 하나씩 입력하고 enter 버튼을 클릭한다 (입력->클릭->입력->클릭...)
-tlmgr repository add http://ftp.ktug.org/KTUG/texlive/tlnet ktug
-tlmgr pinning add ktug *
-tlmgr install ktugbin
-tlmgr install texworks-config 
-tlmgr install nanumttf hcr-lvt
+- (2) 다음의 문구를 순서대로 하나씩 입력하고 enter 버튼을 클릭한다 (입력->클릭->입력->클릭...)<br/>
+tlmgr repository add http://ftp.ktug.org/KTUG/texlive/tlnet ktug<br/>
+tlmgr pinning add ktug *<br/>
+tlmgr install ktugbin<br/>
+tlmgr install texworks-config<br/> 
+tlmgr install nanumttf hcr-lvt<br/>
 - (3) "TeXworks editor"를 실행하고, 실행 창 초록 버튼 옆 항목을 "XeLaTex"로 선택한다
 - (4) 입력창에 다음과 같이 입력하고, 초록 버튼을 클릭한다
-* 오타가 있을 시 "Undefined control sequence"라고 오류 메시지가 뜨니 정확히 입력하자
-\documentclass{article}
-\usepackage{kotex}
-\begin{document}
-Hello World 안녕하세요
-\end{document}
+* 오타가 있을 시 "Undefined control sequence"라고 오류 메시지가 뜨니 정확히 입력하자<br/>
+\documentclass{article}<br/>
+\usepackage{kotex}<br/>
+\begin{document}<br/>
+Hello World 안녕하세요<br/>
+\end{document}<br/>
 - (5) 이상이 없으면 pdf 파일로 변환되어 한글이 출력되는 것을 확인할 수 있다
 ***
 ## 3. r markdown 실행
 - (1) r studio를 실행한다
 - (2) 상단의 File -> New File -> R Markdown을 클릭한다
 - (3) Title과 Author를 입력하고 OK 버튼을 클릭한다
-- (4) 5번째 줄 output 항목에 다음과 같이 입력한다
-output:
-  pdf_document :
-	  latex_engine : xelatex
-  html_notebook : default
-  html_document : default
-mainfont : NanumGothic
+- (4) 5번째 줄 output 항목에 다음과 같이 입력한다<br/>
+output:<br/>
+  pdf_document :<br/>
+	  latex_engine : xelatex<br/>
+  html_notebook : default<br/>
+  html_document : default<br/>
+mainfont : NanumGothic<br/>
 - (5) 입력창에 한글 문구를 입력한다 (아무 문구나 상관없다)
 - (6) Knit 옆 ▼ 표시를 클릭, Knit to PDF를 선택한다
 - (7) 이상이 없으면 한글이 출력된 PDF를 저장, 확인할 수 있다
