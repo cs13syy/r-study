@@ -1,0 +1,44 @@
+---
+title: "Exercise"
+author: "Seoyun Yang"
+date: "2018년 8월 20일"
+output:
+  pdf_document :
+    latex_engine : xelatex
+  html_notebook : default
+  html_document : default
+mainfont : Noto Sans CJK KR
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 과제
+
+ISLR의 Auto data를 이용해 mpg를 response variable, horsepower를 covariate으로 하는 단순선형회귀분석을 시행합니다. 얻어진 모형의 회귀계수와 standard error를 table로 print하세요. data의 산점도를 그리고 그 위에 회귀직선을 붉은 색으로 그려보세요. 불필요한 결과와 code는 출력하지 않고 만들어보세요.
+
+## load library and data
+
+```{r auto, echo=TRUE}
+library(ISLR)
+dim(Auto)
+str(Auto)
+sum(is.na(Auto))
+attach(Auto)
+```
+
+## Simple Linear Regression
+
+```{r auto_lm, echo=TRUE}
+lm.fit = lm(mpg~horsepower, data=Auto)
+sum.fit = summary(lm.fit)$coef
+knitr::kable(sum.fit, caption='coefficients & standard error')
+```
+
+## Plot
+
+```{r, echo=TRUE}
+plot(mpg~horsepower, data=Auto, pch=20)+
+  abline(lm(mpg~horsepower, data=Auto, col='red'))
+```
