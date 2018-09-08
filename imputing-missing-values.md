@@ -12,5 +12,5 @@ DMwR :: knnImputation은 결측값을 채우기 위해 k-Nearest Neighbors 방�
 DMwR :: knnImputation의 한계는 결측값이 팩터 변수에서 나왔을 때 사용하기에 적절하지 않을 수 있다는 것입니다. rpart와 mice는 모두 팩터 변수가 있어도 결측값을 대체할 수 있는 유연성이 있습니다. rpart의 이점은 예측 필드에서 하나의 변수만 0이 아니면 된다는 것입니다.
 여기에서 우리는 결측값을 예측하기 위해 kNN대신 rpart를 사용할 것입니다. 팩터 변수를 처리하고 싶으면, rpart 함수를 호출할 때 method=class로 설정합니다. 숫자의 경우 method=anova를 사용합니다. 앞에서 언급한대로, 반응 변수를 train set에 넣지 않아야 합니다.
 
-###4.3 mice
+### 4.3 mice
 Multivariate Imputation by Chained Equations의 mice는 결측값 처리를 위한 고급 기능을 제공하는 R 패키지입니다. mice()로 모형을 만들고 complete()로 완성된 데이터를 생성하는 2가지 단계로, 약간은 독특한 방법을 사용합니다. mice(df) 함수는 df 개의 complete 복사본들을 만들어냅니다. 각각의 complete 카피들은 서로 다른 결측값이 대체된 것입니다. complete () 함수는 이러한 데이터 세트 중 하나 또는 여러 개를 반환하며 default는 첫 번째 complete 복사본입니다. 
